@@ -20,6 +20,11 @@
 				"__TYPE__": "FieldContent",
 				"value": "text-left",
 				"type": "Select"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Grey",
+				"type": "Select"
 			}
 		},
 		"items": []
@@ -70,6 +75,11 @@
 			"text_align": {
 				"__TYPE__": "FieldContent",
 				"value": "text-center",
+				"type": "Select"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Grey",
 				"type": "Select"
 			}
 		},

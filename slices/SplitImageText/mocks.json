@@ -226,17 +226,6 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "heroSection",
 		"primary": {
-			"text": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Sunt incididunt esse est id ea voluptate anim exercitation enim veniam duis tempor ut irure proident. Dolore proident veniam anim officia ullamco exercitation do nostrud commodo ea eiusmod quis laborum qui consectetur. Non mollit sit aliquip magna duis proident culpa nulla."
-						}
-					}
-				]
-			},
 			"image": {
 				"origin": {
 					"id": "main",
@@ -276,6 +265,28 @@
 				"__TYPE__": "FieldContent",
 				"value": "Green",
 				"type": "Select"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Ahead"
+						}
+					}
+				]
+			},
+			"paragraph": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Cillum elit anim Lorem commodo elit pariatur amet non duis irure mollit reprehenderit sunt. Nostrud labore commodo eiusmod aliqua ullamco elit cillum pariatur officia nisi incididunt est velit reprehenderit."
+						}
+					}
+				]
 			}
 		},
 		"items": [

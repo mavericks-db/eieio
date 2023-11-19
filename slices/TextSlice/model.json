@@ -12,6 +12,17 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "Grey",
+              "Green"
+            ]
+          }
+        },
         "text_field": {
           "type": "StructuredText",
           "config": {
@@ -43,6 +54,17 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "Grey",
+              "Green"
+            ]
+          }
+        },
         "text_field": {
           "type": "StructuredText",
           "config": {

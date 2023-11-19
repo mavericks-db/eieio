@@ -318,14 +318,24 @@ export interface SplitImageTextSliceHeroSectionPrimary {
   background_color: prismic.SelectField<"Grey" | "Green">;
 
   /**
-   * text field in *SplitImageText → Primary*
+   * Title field in *SplitImageText → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: split_image_text.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * Paragraph field in *SplitImageText → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: split_image_text.primary.text
+   * - **API ID Path**: split_image_text.primary.paragraph
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  text: prismic.RichTextField;
+  paragraph: prismic.RichTextField;
 
   /**
    * image field in *SplitImageText → Primary*
@@ -398,6 +408,16 @@ export type SplitImageTextSlice = prismic.SharedSlice<
  */
 export interface TextSliceSliceDefaultPrimary {
   /**
+   * Background Color field in *TextSlice → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text_slice.primary.background_color
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  background_color: prismic.SelectField<"Grey" | "Green">;
+
+  /**
    * Text Field field in *TextSlice → Primary*
    *
    * - **Field Type**: Rich Text
@@ -435,6 +455,16 @@ export type TextSliceSliceDefault = prismic.SharedSliceVariation<
  * Primary content in *TextSlice → Primary*
  */
 export interface TextSliceSliceCallToActionButtonPrimary {
+  /**
+   * Background Color field in *TextSlice → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text_slice.primary.background_color
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  background_color: prismic.SelectField<"Grey" | "Green">;
+
   /**
    * Text Field field in *TextSlice → Primary*
    *
