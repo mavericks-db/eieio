@@ -1,0 +1,83 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"text_field": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Tempor ad consectetur do aliquip non consequat.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"text_align": {
+				"__TYPE__": "FieldContent",
+				"value": "text-left",
+				"type": "Select"
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "callToActionButton",
+		"primary": {
+			"text_field": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "A Nice Big Title",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 16
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "\nMagna fugiat exercitation est cupidatat duis labore culpa.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "golden",
+				"type": "Text"
+			},
+			"text_align": {
+				"__TYPE__": "FieldContent",
+				"value": "text-center",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

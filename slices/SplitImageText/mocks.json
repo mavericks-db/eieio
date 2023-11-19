@@ -1,0 +1,288 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Occaecat deserunt ipsum ipsum consequat adipisicing ut do Lorem cillum ex. Elit non anim nostrud. Eiusmod do labore excepteur."
+						}
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+					"width": 3456,
+					"height": 3456
+				},
+				"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+				"width": 3456,
+				"height": 3456,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "splitImageRight",
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem et sunt consequat non commodo. Minim minim do laborum non dolore nulla ex dolore culpa. Laboris quis incididunt Lorem adipisicing culpa ea dolore."
+						}
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "dNN9MbZPuzY",
+					"url": "https://images.unsplash.com/photo-1696446700665-1e26fcca574f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MXwxfHNlYXJjaHw4fHxmcnVpdHxlbnwwfHx8fDE3MDAzOTI0NzJ8MA&ixlib=rb-4.0.3&q=85",
+					"width": 6048,
+					"height": 4024
+				},
+				"url": "https://images.unsplash.com/photo-1696446700665-1e26fcca574f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MXwxfHNlYXJjaHw4fHxmcnVpdHxlbnwwfHx8fDE3MDAzOTI0NzJ8MA&ixlib=rb-4.0.3&q=85",
+				"width": 6048,
+				"height": 4024,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"alt": "a man and a woman laying on a blanket with fruit",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "splitButtonLeft",
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laborum ex occaecat nisi Lorem."
+						}
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6",
+					"width": 4272,
+					"height": 2848
+				},
+				"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6",
+				"width": 4272,
+				"height": 2848,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "getting",
+				"type": "Text"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "splitButtonRight",
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Proident duis adipisicing sunt. Ea anim laboris Lorem sit labore id laboris excepteur est pariatur."
+						}
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+					"width": 5848,
+					"height": 3899
+				},
+				"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+				"width": 5848,
+				"height": 3899,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "forth",
+				"type": "Text"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Grey",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "heroSection",
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sunt incididunt esse est id ea voluptate anim exercitation enim veniam duis tempor ut irure proident. Dolore proident veniam anim officia ullamco exercitation do nostrud commodo ea eiusmod quis laborum qui consectetur. Non mollit sit aliquip magna duis proident culpa nulla."
+						}
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+					"width": 5616,
+					"height": 3744
+				},
+				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+				"width": 5616,
+				"height": 3744,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "fence",
+				"type": "Text"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]
