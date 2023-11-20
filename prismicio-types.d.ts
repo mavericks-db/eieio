@@ -72,6 +72,71 @@ export type HomepageDocument<Lang extends string = string> =
 export type AllDocumentTypes = HomepageDocument;
 
 /**
+ * Primary content in *EmbedSection → Primary*
+ */
+export interface EmbedSectionSliceDefaultPrimary {
+  /**
+   * Background Color field in *EmbedSection → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: embed_section.primary.background_color
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  background_color: prismic.SelectField<"Grey" | "Green">;
+
+  /**
+   * Text field in *EmbedSection → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: embed_section.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text: prismic.RichTextField;
+
+  /**
+   * Embed field in *EmbedSection → Primary*
+   *
+   * - **Field Type**: Embed
+   * - **Placeholder**: *None*
+   * - **API ID Path**: embed_section.primary.embed
+   * - **Documentation**: https://prismic.io/docs/field#embed
+   */
+  embed: prismic.EmbedField;
+}
+
+/**
+ * Default variation for EmbedSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type EmbedSectionSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<EmbedSectionSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *EmbedSection*
+ */
+type EmbedSectionSliceVariation = EmbedSectionSliceDefault;
+
+/**
+ * EmbedSection Shared Slice
+ *
+ * - **API ID**: `embed_section`
+ * - **Description**: EmbedSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type EmbedSectionSlice = prismic.SharedSlice<
+  "embed_section",
+  EmbedSectionSliceVariation
+>;
+
+/**
  * Primary content in *SplitImageText → Primary*
  */
 export interface SplitImageTextSliceDefaultPrimary {
@@ -552,6 +617,10 @@ declare module "@prismicio/client" {
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
       AllDocumentTypes,
+      EmbedSectionSlice,
+      EmbedSectionSliceDefaultPrimary,
+      EmbedSectionSliceVariation,
+      EmbedSectionSliceDefault,
       SplitImageTextSlice,
       SplitImageTextSliceDefaultPrimary,
       SplitImageTextSliceSplitImageRightPrimary,
