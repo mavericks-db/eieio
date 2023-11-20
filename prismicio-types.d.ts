@@ -63,13 +63,81 @@ interface HomepageDocumentData {
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomepageDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithoutUID<
+  prismic.PrismicDocumentWithUID<
     Simplify<HomepageDocumentData>,
     "homepage",
     Lang
   >;
 
-export type AllDocumentTypes = HomepageDocument;
+type MarketingPageDocumentDataSlicesSlice =
+  | EmbedSectionSlice
+  | SplitImageTextSlice
+  | TextSliceSlice;
+
+/**
+ * Content for Marketing Page documents
+ */
+interface MarketingPageDocumentData {
+  /**
+   * Slice Zone field in *Marketing Page*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: marketing_page.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<MarketingPageDocumentDataSlicesSlice> /**
+   * Meta Description field in *Marketing Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: marketing_page.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Marketing Page*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: marketing_page.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Marketing Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: marketing_page.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Marketing Page document from Prismic
+ *
+ * - **API ID**: `marketing_page`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type MarketingPageDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<MarketingPageDocumentData>,
+    "marketing_page",
+    Lang
+  >;
+
+export type AllDocumentTypes = HomepageDocument | MarketingPageDocument;
 
 /**
  * Primary content in *EmbedSection → Primary*
@@ -616,6 +684,9 @@ declare module "@prismicio/client" {
       HomepageDocument,
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
+      MarketingPageDocument,
+      MarketingPageDocumentData,
+      MarketingPageDocumentDataSlicesSlice,
       AllDocumentTypes,
       EmbedSectionSlice,
       EmbedSectionSliceDefaultPrimary,
